@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RecyclerView for notifications -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notificationRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <!-- Empty state layout -->
+    <LinearLayout
+        android:id="@+id/emptyStateLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/emptyIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_mailbox"/>
+
+        <TextView
+            android:id="@+id/emptyTitle"
+            android:text="No notifications yet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/emptyMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Your notifications will appear here once you've received them."
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textColor="#666"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/historicalLink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Go to historical notifications"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:paddingTop="16dp"/>
+    </LinearLayout>
+</FrameLayout>

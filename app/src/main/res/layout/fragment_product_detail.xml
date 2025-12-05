@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:paddingTop="4dp"/>
+
+        <TextView
+            android:id="@+id/productOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"/>
+
+        <TextView
+            android:id="@+id/productSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"/>
+
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"/>
+
+        <EditText
+            android:id="@+id/quantityInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:paddingTop="8dp"/>
+
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="Add to Cart"
+            android:background="@drawable/button_green"
+            android:paddingTop="4dp"/>
+    </LinearLayout>
+</ScrollView>

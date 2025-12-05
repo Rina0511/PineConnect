@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "243995807172",
+    "project_id": "pineconnect-6b911",
+    "storage_bucket": "pineconnect-6b911.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243995807172:android:1baabccb17c81901352891",
+        "android_client_info": {
+          "package_name": "com.example.PineConnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr46jAOR6W5DMUk9YHZdXBOXvTAA5YlV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243995807172:android:2c9f11e983862d6f352891",
+        "android_client_info": {
+          "package_name": "edu.utem.ftmk.pineconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr46jAOR6W5DMUk9YHZdXBOXvTAA5YlV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

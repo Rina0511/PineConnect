@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cartItemImage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:id="@+id/cartItemName"
+            android:text="Pineapple Name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cartItemPrice"
+            android:text="RM 7.0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnDecrease"
+            android:text="-"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/cartItemQuantity"
+            android:text="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnIncrease"
+            android:text="+"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+</LinearLayout>

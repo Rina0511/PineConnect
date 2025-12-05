@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="150dp"
+            android:layout_height="166dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo1" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELAMAT DATANG"
+            android:textSize="16sp"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <!-- USER ID -->
+        <TextView
+            android:id="@+id/tvUserIdLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USER ID"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_green_border"
+            android:hint="Enter your email"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- PASSWORD -->
+        <TextView
+            android:id="@+id/tvPasswordLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_green_border"
+            android:inputType="textPassword"
+            android:hint="Enter your password"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="@drawable/button_green"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#2BA84A"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Register -->
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Member Registration"
+            android:textColor="#2BA84A"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
