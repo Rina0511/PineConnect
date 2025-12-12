@@ -59,11 +59,17 @@ class FarmerProfileActivity : AppCompatActivity() {
         // Edit Profile button
         val editProfileButton = findViewById<Button>(R.id.editProfileButton)
         editProfileButton.setOnClickListener {
+<<<<<<< HEAD
             // Toast.makeText(this, "Edit Profile clicked", Toast.LENGTH_SHORT).show() // Remove this line if desired
 
             // 🚀 ACTION: Launch the Activity that hosts the EditProfileFragment
             val intent = Intent(this, EditProfileActivity::class.java)
             startActivity(intent)
+=======
+            Toast.makeText(this, "Edit Profile clicked", Toast.LENGTH_SHORT).show()
+            // Example: navigate to EditProfileActivity if you have one
+            // startActivity(Intent(this, EditProfileActivity::class.java))
+>>>>>>> 5b5fe13ff6fb54957cf1e212d8b6fe6ebbcbd977
         }
 
         // Language option

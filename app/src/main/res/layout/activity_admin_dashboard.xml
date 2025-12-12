@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:layout_marginTop="40dp"
+=======
+>>>>>>> 5b5fe13ff6fb54957cf1e212d8b6fe6ebbcbd977
     android:background="#E8F5E9"
     android:padding="16dp">
 
@@ -21,7 +24,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+<<<<<<< HEAD
         android:text="Hello,Admin"
+=======
+        android:text="Hello, Faiz"
+>>>>>>> 5b5fe13ff6fb54957cf1e212d8b6fe6ebbcbd977
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"

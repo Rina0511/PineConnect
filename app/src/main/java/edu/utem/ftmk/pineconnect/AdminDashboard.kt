@@ -1,15 +1,21 @@
 package edu.utem.ftmk.pineconnect
 
+<<<<<<< HEAD
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button // <-- IMPORTANT: Needed for Button views
+=======
+import android.content.Intent
+import android.os.Bundle
+>>>>>>> 5b5fe13ff6fb54957cf1e212d8b6fe6ebbcbd977
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
+<<<<<<< HEAD
 // ======================================================
 // ✅ CRITICAL FIX: Missing Activity Imports
 // Add imports for the Activities the dashboard will launch.
@@ -26,11 +32,16 @@ import edu.utem.ftmk.pineconnect.SystemSettingsActivity
 import edu.utem.ftmk.pineconnect.AdminAnalyticsActivity // Changed from a generic name
 
 
+=======
+>>>>>>> 5b5fe13ff6fb54957cf1e212d8b6fe6ebbcbd977
 class AdminDashboard : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
+<<<<<<< HEAD
     @SuppressLint("SetTextI18n", "MissingInflatedId")
+=======
+>>>>>>> 5b5fe13ff6fb54957cf1e212d8b6fe6ebbcbd977
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -39,6 +50,7 @@ class AdminDashboard : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         val greetingText = findViewById<TextView>(R.id.adminGreeting)
+<<<<<<< HEAD
 
         // Fix for Null Safety for Admin Name Retrieval
         val adminName = intent.getStringExtra("adminName") ?: "Admin"
@@ -86,6 +98,11 @@ class AdminDashboard : AppCompatActivity() {
 
 
         // --- Logout Button ---
+=======
+        val adminName = intent.getStringExtra("adminName")
+        greetingText.text = "Hello, $adminName"
+
+>>>>>>> 5b5fe13ff6fb54957cf1e212d8b6fe6ebbcbd977
         val logoutOption = findViewById<ImageView>(R.id.logout)
         logoutOption.setOnClickListener {
             auth.signOut()
@@ -95,4 +112,8 @@ class AdminDashboard : AppCompatActivity() {
             startActivity(intent)
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5b5fe13ff6fb54957cf1e212d8b6fe6ebbcbd977
