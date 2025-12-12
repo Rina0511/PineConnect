@@ -13,11 +13,14 @@ PineConnect is a mobile app designed to help users browse pineapple varieties, m
 - 🛒 **Customer Dashboard**  
   Browse pineapple types, place orders, view history, and manage profile
 
+  - 🧑‍💼 **Admin Dashboard**  
+  Manage users (add/edit/suspend), monitor products, handle complaints, configure system settings, and view analytics
+
 - 📦 **Cart & Order Management**  
   Add items to cart, track orders, and view past purchases
 
 - 🔔 **Notifications**  
-  Receive updates and tips via Firebase Cloud Messaging (optional)
+  Receive updates
 
 - 📁 **Firebase Firestore Integration**  
   Stores user profiles, roles, survey data, and order history
