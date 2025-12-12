@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:background="#E8F5E9"
+    android:padding="16dp">
+
+    <!-- Greeting -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4CAF50"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/adminGreeting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Hello,Admin"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true" />
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_logout"
+        app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_green_border"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Search"
+            android:background="@drawable/search_bar_fill"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/micIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_mic"
+            app:tint="#4CAF50"
+            android:contentDescription="Mic" />
+    </LinearLayout>
+
+    <!-- Dashboard Buttons -->
+    <ScrollView
+        android:id="@+id/dashboardScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchBar"
+        android:layout_marginTop="16dp"
+        android:layout_above="@+id/socialBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- User Management -->
+            <TextView
+                android:text="User Management"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:paddingBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnAddUser"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="ADD"
+                    android:background="@drawable/button_green"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnEditUser"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="EDIT"
+                    android:background="@drawable/button_green"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnSuspendUser"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="SUSPEND"
+                    android:background="@drawable/button_green"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Other Modules -->
+            <Button
+                android:id="@+id/btnNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Management"
+                android:background="@drawable/button_green"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Monitoring"
+                android:background="@drawable/button_green"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnComplaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complaint Handling"
+                android:background="@drawable/button_green"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="System Settings"
+                android:background="@drawable/button_green"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnAnalytics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Analytics"
+                android:background="@drawable/button_green"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Social Media Bar -->
+    <LinearLayout
+        android:id="@+id/socialBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="12dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_instagram"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Instagram" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_facebook"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Facebook" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_gmail"
+            android:contentDescription="Email" />
+    </LinearLayout>
+</RelativeLayout>

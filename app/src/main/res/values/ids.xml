@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="portalFarmProfile" type="id" />
+    <item name="portalActiveSurveys" type="id" />
+    <item name="portalAnalytics" type="id" />
+    <item name="portalCustomerInteractions" type="id" />
+    <item name="farmerGreeting" type="id" />
+    <item name="iconProfile" type="id" />
+    <item name="textLatestYield" type="id" />
+    <item name="portalYieldAnalytics" type="id" />
+</resources>
